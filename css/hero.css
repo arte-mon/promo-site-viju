@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   overflow: hidden;
-  padding-top: 10svh;
+  padding: 10svh 0;
 }
 
 /* Контейнер для карточек */
@@ -55,7 +55,7 @@
 }
 
 .main-title {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   line-height: 1.1;
   color: #2e7d32;
   font-weight: 900;
@@ -64,7 +64,7 @@
 }
 
 .side-title {
-  font-size: 5rem;
+  /* font-size: 5rem; */
   line-height: 1;
   color: #81c784;
   font-weight: 900;

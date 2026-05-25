@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/slider.css" />
   </head>
   <body>
     <main class="main">
@@ -22,16 +23,16 @@
                 <a href="#" class="menu-item">Сообщество</a>
               </nav>
 
-              <h1 class="main-title">
+              <h2 class="main-title">
                 Стань чьими-то глазами<br />прямо сейчас
-              </h1>
+              </h2>
 
               <button class="btn">Скачать приложение</button>
             </div>
 
             <!-- Правая карточка -->
             <div class="card card-right">
-              <h2 class="side-title">Я хочу<br />помогать</h2>
+              <h1 class="side-title">Я хочу<br />помогать</h1>
             </div>
           </div>
 
@@ -40,6 +41,53 @@
             <!-- ЗАМЕНИТЕ src НА ПУТЬ К ВАШЕЙ КАРТИНКЕ С СОВОЙ -->
             <img src="assets/img/owl.png" alt="Зеленая сова" class="owl-img" />
           </div>
+        </div>
+      </section>
+
+      <section class="slider-section">
+        <!-- Фото на весь блок -->
+        <img src="assets/img/2-1.png" alt="Фон слайдера" class="slider-bg" />
+
+        <!-- Карточка с текстом поверх фото -->
+        <div class="slider-text-card">
+          <h2 class="slider-title">Отвечайте<br />на вызов SOS</h2>
+          <p class="slider-description">
+            Видишь сигнал рядом с собой? Включай режим помощника и иди по
+            радару. Помоги перейти сложный перекресток или сориентироваться в
+            толпе. Реальная помощь в реальном мире.
+          </p>
+        </div>
+
+        <!-- Кнопки навигации -->
+        <div class="slider-nav">
+          <button
+            class="slider-nav-btn slider-nav-btn--prev"
+            aria-label="Предыдущий слайд"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button
+            class="slider-nav-btn slider-nav-btn--next"
+            aria-label="Следующий слайд"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
         </div>
       </section>
 
