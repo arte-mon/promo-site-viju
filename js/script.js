@@ -12,21 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
       sliderBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
-      // Показываем соответствующий фон
+      // Показываем соответствующий фон с анимацией
       sliderBgs.forEach(bg => {
         if (bg.getAttribute('data-slide') === slideIndex) {
-          bg.style.display = 'block';
+          bg.classList.add('active');
         } else {
-          bg.style.display = 'none';
+          bg.classList.remove('active');
         }
       });
 
-      // Показываем соответствующую карточку с текстом
+      // Показываем соответствующую карточку с текстом с анимацией
       textCards.forEach(card => {
         if (card.getAttribute('data-slide') === slideIndex) {
-          card.style.display = 'block';
+          card.classList.add('active');
         } else {
-          card.style.display = 'none';
+          card.classList.remove('active');
         }
       });
     });
