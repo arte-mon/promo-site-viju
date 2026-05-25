@@ -49,10 +49,11 @@
       <!-- СЛАЙДЕР -->
       <section class="slider-section">
         <!-- Фото на весь блок -->
-        <img src="assets/img/2-1.png" alt="Фон слайдера" class="slider-bg" />
+        <img src="assets/img/2-1.png" alt="Фон слайдера" class="slider-bg" data-slide="1" />
+        <img src="assets/img/2-2.png" alt="Фон слайдера" class="slider-bg" data-slide="2" style="display: none;" />
 
         <!-- Карточка с текстом поверх фото -->
-        <div class="slider-text-card">
+        <div class="slider-text-card" data-slide="1">
           <h2 class="slider-title">Отвечайте<br />на вызов SOS</h2>
           <p class="slider-description">
             Видишь сигнал рядом с собой? Включай режим помощника и иди по
@@ -61,16 +62,25 @@
           </p>
         </div>
 
+        <div class="slider-text-card" data-slide="2" style="display: none;">
+          <h2 class="slider-title">Помогайте не выходя из дома</h2>
+          <p class="slider-description">
+            Видишь сигнал рядом с собой? Включай режим помощника и иди по радару. Помоги перейти сложный перекресток или сориентироваться в толпе. Реальная помощь в реальном мире.
+          </p>
+        </div>
+
         <!-- Кнопки навигации -->
         <div class="slider-nav">
           <div class="slider-nav-capsule">
             <button
-              class="slider-nav-btn slider-nav-btn--prev"
+              class="slider-nav-btn slider-nav-btn--prev active"
               aria-label="Предыдущий слайд"
+              data-slide="1"
             ></button>
             <button
               class="slider-nav-btn slider-nav-btn--next"
               aria-label="Следующий слайд"
+              data-slide="2"
             ></button>
           </div>
         </div>

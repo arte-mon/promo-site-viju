@@ -104,6 +104,14 @@ body {
   background-color: #A5D3A5;
 }
 
+.slider-nav-btn.active {
+  background-color: #3C9A57 !important;
+}
+
+.slider-nav-btn:not(.active) {
+  background-color: #A5D3A5 !important;
+}
+
 /* АДАПТИВНОСТЬ */
 @media (max-width: 1024px) {
   .slider-section {
