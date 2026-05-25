@@ -1,7 +1,12 @@
+.hero {
+  width: 100%;
+  overflow: hidden;
+}
+
 .hero-container {
   display: flex;
   gap: 40px;
-  max-width: 1600px;
+  max-width: 100%;
   width: 100%;
   align-items: flex-start;
 }
@@ -11,6 +16,7 @@
   display: flex;
   gap: 40px;
   flex: 1;
+  min-width: 0;
 }
 
 .card {
@@ -21,17 +27,23 @@
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  max-height: 695px; /* Максимальная высота */
+  max-height: 695px;
+  min-width: 0;
 }
 
 .card-left {
   flex: 1.2;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-right {
   flex: 1;
   align-items: flex-start;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .menu {
@@ -58,6 +70,7 @@
   color: #2e7d32;
   font-weight: 900;
   margin-bottom: 60px;
+  flex-shrink: 0;
 }
 
 .side-title {
@@ -66,6 +79,7 @@
   color: #81c784;
   font-weight: 900;
   margin-bottom: 20px;
+  flex-shrink: 0;
 }
 
 .btn {
@@ -93,11 +107,12 @@
   display: flex;
   align-items: flex-end;
   margin-left: 20px;
+  max-width: 550px;
+  width: 100%;
 }
 
 .owl-img {
   width: 100%;
-  max-width: 550px;
   height: auto;
   object-fit: contain;
   display: block;
