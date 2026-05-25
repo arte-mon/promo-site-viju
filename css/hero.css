@@ -28,6 +28,7 @@
 }
 
 .card-right {
+  width: 40%;
   align-items: flex-start;
   text-align: left;
   display: flex;
@@ -98,7 +99,7 @@
   margin-left: -60px;
   width: 520px;
   position: absolute;
-  top: 50svh;
+  top: 40svh;
   right: 0;
 }
 

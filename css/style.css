@@ -95,6 +95,33 @@ button {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1220px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1800px;
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 3840px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
 body {
   font-family: "Stolzl", sans-serif;
   font-weight: 400;
