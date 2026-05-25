@@ -1,0 +1,177 @@
+.hero-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1600px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* Контейнер для карточек */
+.cards-wrapper {
+  display: flex;
+  gap: 40px;
+  flex: 1;
+}
+
+.card {
+  background-color: #fcfff5;
+  border-radius: 60px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-height: 695px; /* Максимальная высота */
+}
+
+.card-left {
+  flex: 1.2;
+}
+
+.card-right {
+  flex: 1;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.menu-item {
+  font-size: 32px;
+  font-weight: 800;
+  color: #388e3c;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  opacity: 0.7;
+}
+
+.main-title {
+  font-size: 96px;
+  line-height: 1.1;
+  color: #2e7d32;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+
+.side-title {
+  font-size: 128px;
+  line-height: 1;
+  color: #81c784;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #43a047;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-size: 32px;
+  font-weight: 800;
+  cursor: pointer;
+  width: fit-content;
+  transition: transform 0.2s;
+  font-family: "Nunito", sans-serif;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #388e3c;
+}
+
+/* Контейнер для совы - отдельно справа */
+.owl-container {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 20px;
+}
+
+.owl-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 1200px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card {
+    max-height: none;
+    width: 100%;
+  }
+
+  .owl-container {
+    margin-left: 0;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .owl-img {
+    max-width: 400px;
+  }
+
+  .main-title {
+    font-size: 64px;
+  }
+  .side-title {
+    font-size: 80px;
+  }
+  .menu-item {
+    font-size: 24px;
+  }
+  .btn {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 40px;
+    border-radius: 40px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .main-title {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+  .side-title {
+    font-size: 56px;
+  }
+  .menu-item {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+
+  .owl-img {
+    max-width: 250px;
+  }
+}
