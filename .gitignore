@@ -1,1 +1,4 @@
-(css/hero.css)
+(css/slider.css, index.html)
+
+# No build artifacts, dependencies, or temp files detected
+# Only source/config files present - keeping .gitignore empty
