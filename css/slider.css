@@ -21,6 +21,7 @@ body {
   overflow: hidden;
   position: relative;
   aspect-ratio: 16 / 7;
+  height: 100svh;
 }
 
 /* Фоновое изображение */
@@ -58,7 +59,9 @@ body {
   z-index: 3;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+  transition:
+    opacity 0.6s ease-in-out,
+    visibility 0.6s ease-in-out;
 }
 
 .slider-text-card.active {
@@ -94,7 +97,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: #F8FFE2;
+  background-color: #f8ffe2;
   border-radius: 40px;
   padding: 12px;
 }
@@ -113,19 +116,19 @@ body {
 }
 
 .slider-nav-btn--prev {
-  background-color: #3C9A57;
+  background-color: #3c9a57;
 }
 
 .slider-nav-btn--next {
-  background-color: #A5D3A5;
+  background-color: #a5d3a5;
 }
 
 .slider-nav-btn.active {
-  background-color: #3C9A57 !important;
+  background-color: #3c9a57 !important;
 }
 
 .slider-nav-btn:not(.active) {
-  background-color: #A5D3A5 !important;
+  background-color: #a5d3a5 !important;
 }
 
 /* АДАПТИВНОСТЬ */

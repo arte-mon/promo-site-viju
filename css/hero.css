@@ -2,6 +2,7 @@
   width: 100%;
   overflow: hidden;
   padding: 10svh 0;
+  height: 100svh;
 }
 
 /* Контейнер для карточек */

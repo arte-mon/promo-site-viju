@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/rating.css" />
+    <link rel="stylesheet" href="css/help.css" />
   </head>
   <body>
     <main class="main">
@@ -49,8 +51,18 @@
       <!-- СЛАЙДЕР -->
       <section class="slider-section">
         <!-- Фото на весь блок -->
-        <img src="assets/img/2-1.png" alt="Фон слайдера" class="slider-bg active" data-slide="1" />
-        <img src="assets/img/2-2.png" alt="Фон слайдера" class="slider-bg" data-slide="2" />
+        <img
+          src="assets/img/2-1.png"
+          alt="Фон слайдера"
+          class="slider-bg active"
+          data-slide="1"
+        />
+        <img
+          src="assets/img/2-2.png"
+          alt="Фон слайдера"
+          class="slider-bg"
+          data-slide="2"
+        />
 
         <!-- Карточка с текстом поверх фото -->
         <div class="slider-text-card active" data-slide="1">
@@ -65,7 +77,9 @@
         <div class="slider-text-card" data-slide="2">
           <h2 class="slider-title">Помогайте не выходя из дома</h2>
           <p class="slider-description">
-            Видишь сигнал рядом с собой? Включай режим помощника и иди по радару. Помоги перейти сложный перекресток или сориентироваться в толпе. Реальная помощь в реальном мире.
+            Видишь сигнал рядом с собой? Включай режим помощника и иди по
+            радару. Помоги перейти сложный перекресток или сориентироваться в
+            толпе. Реальная помощь в реальном мире.
           </p>
         </div>
 
@@ -82,6 +96,152 @@
               aria-label="Следующий слайд"
               data-slide="2"
             ></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="hall-of-fame">
+        <div class="container">
+          <h2 class="hall-title">Зал славы</h2>
+
+          <div class="podium">
+            <!-- 2-е место -->
+            <div class="user-card user-card--second">
+              <div class="user-card__photo-wrap">
+                <span class="user-card__rank">2</span>
+                <!-- Замените src на фото Айдара -->
+                <img
+                  src="assets/img/man-2-place.png"
+                  alt="Айдар Прилепский"
+                  class="user-card__photo"
+                />
+              </div>
+              <div class="user-card__info">
+                <h3 class="user-card__name">Айдар<br />Прилепский</h3>
+                <ul class="user-card__stats">
+                  <li>40 ответов в чат рулетке</li>
+                  <li>1 приём SOS</li>
+                  <li>6 выполненных заданий</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 1-е место -->
+            <div class="user-card user-card--first">
+              <div class="user-card__photo-wrap">
+                <span class="user-card__rank">1</span>
+                <!-- Замените src на фото Гели -->
+                <img
+                  src="assets/img/man-1-place.png"
+                  alt="Геля Филантропова"
+                  class="user-card__photo"
+                />
+              </div>
+              <div class="user-card__info">
+                <h3 class="user-card__name">Геля<br />Филантропова</h3>
+                <ul class="user-card__stats">
+                  <li>50 ответов в чат рулетке</li>
+                  <li>3 приёма SOS</li>
+                  <li>8 выполненных заданий</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 3-е место -->
+            <div class="user-card user-card--third">
+              <div class="user-card__photo-wrap">
+                <span class="user-card__rank">3</span>
+                <!-- Заглушка: иконка пользователя -->
+                <div class="user-card__photo-placeholder">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="user-card__info">
+                <h3 class="user-card__name">Вадим Жимянко</h3>
+                <ul class="user-card__stats">
+                  <li>32 ответов в чат рулетке</li>
+                  <li>1 приём SOS</li>
+                  <li>5 выполненных заданий</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="help">
+        <div class="container">
+          <div class="guide-section">
+            <!-- Левая часть — текст -->
+            <div class="guide-text">
+              <h2 class="guide-title">
+                Помогайте<br />
+                в своё удовольствие
+              </h2>
+              <p class="guide-subtitle">
+                Краткий гайд по использованию приложения<br />
+                Смотрите и учитесь! Ведь с нашим гайдом это так просто!
+              </p>
+            </div>
+
+            <!-- Правая часть — стек слоёв -->
+            <div class="guide-visual">
+              <!-- Задний слой — светло-зелёный -->
+              <div class="stack-layer stack-layer--back"></div>
+
+              <!-- Средний слой — тёмно-зелёный -->
+              <div class="stack-layer stack-layer--mid"></div>
+
+              <!-- Передний слой — карточка с телефоном -->
+              <div class="stack-layer stack-layer--front">
+                <!-- Верхняя часть с зелёным фоном -->
+                <div class="phone-header">
+                  <div class="phone-logo">
+                    <svg
+                      class="phone-logo__icon"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 2L4 28h24L16 2z"
+                        fill="white"
+                        opacity="0.9"
+                      />
+                      <path
+                        d="M16 8L10 24h12L16 8z"
+                        fill="#fcfff5"
+                        opacity="0.5"
+                      />
+                    </svg>
+                    <span class="phone-logo__text">аврора</span>
+                  </div>
+
+                  <img
+                    src="assets/img/owl.png"
+                    alt="Зелёная сова"
+                    class="owl-image"
+                  />
+                </div>
+
+                <!-- Нижняя часть — белый фон с текстом -->
+                <div class="phone-body">
+                  <h3 class="phone-body__title">Добро пожаловать!</h3>
+                  <p class="phone-body__text">
+                    Вступайте в сообщество волонтёров<br />
+                    и помогайте слабовидящим людям
+                  </p>
+                  <button class="phone-body__btn">Создать аккаунт</button>
+                  <p class="phone-body__link">
+                    Уже есть аккаунт? <a href="#">Войти</a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
