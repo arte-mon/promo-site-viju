@@ -1,0 +1,153 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #d4f7c2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+} */
+
+.community-section {
+  /* max-width: 1400px; */
+  width: 100%;
+  background-color: #c4f2cc; /* Мятно-зелёный фон */
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 100svh;
+  padding: 60px 80px;
+  position: relative;
+}
+
+.community-text {
+  flex: 1;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.community-title {
+  font-size: 5rem;
+  line-height: 1.05;
+  color: #2e8b42;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.community-description {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #3a9e56;
+  font-weight: 700;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.community-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e8b42;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-size: 32px;
+  font-weight: 800;
+  cursor: pointer;
+  width: fit-content;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+  font-family: "Nunito", sans-serif;
+}
+
+.community-btn:hover {
+  transform: scale(1.05);
+  background-color: #267a38;
+}
+
+.community-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  z-index: 0;
+}
+
+.community-image img {
+  width: 70%;
+  /* max-width: 700px; */
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .community-section {
+    flex-direction: column;
+    border-radius: 40px;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .community-text {
+    padding-right: 0;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+
+  .community-title {
+    font-size: 56px;
+  }
+
+  .community-description {
+    font-size: 24px;
+  }
+
+  .community-btn {
+    font-size: 24px;
+    padding: 16px 32px;
+  }
+
+  .community-image img {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .community-section {
+    border-radius: 30px;
+    padding: 30px 20px;
+  }
+
+  .community-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .community-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .community-btn {
+    font-size: 20px;
+    padding: 14px 28px;
+  }
+
+  .community-image img {
+    max-width: 350px;
+  }
+}
