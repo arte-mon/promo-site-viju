@@ -39,7 +39,7 @@ body {
 
 /* Левая карточка */
 .card--main h2 {
-  font-size: clamp(2rem, 5vw, 3.5rem); /* Адаптивный размер шрифта */
+  font-size: 5rem;
   line-height: 1.2;
   margin: 0 0 20px 0;
   font-weight: bold;
