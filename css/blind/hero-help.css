@@ -94,6 +94,84 @@ body {
   transform: scale(1.05); /* Легкое увеличение при наведении */
 }
 
+.accessible-footer {
+  background: #0a0c08;
+
+  border-radius: 48px 48px 0 0;
+
+  margin-top: 120px;
+
+  padding: 56px 64px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left nav {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.footer-left nav a {
+  color: #ffe342;
+
+  text-decoration: none;
+
+  font-size: 64px;
+  line-height: 0.9;
+}
+
+.footer-download {
+  display: inline-block;
+
+  margin-top: 56px;
+
+  background: #ffe342;
+
+  color: #000;
+
+  text-decoration: none;
+
+  padding: 18px 36px;
+
+  border-radius: 999px;
+
+  font-size: 20px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+}
+
+.volunteer-link {
+  color: #ffe342;
+
+  text-decoration: none;
+
+  font-size: 32px;
+  line-height: 0.9;
+
+  text-align: right;
+}
+
+.footer-icons {
+  display: flex;
+
+  gap: 24px;
+}
+
+.footer-icons img {
+  height: 64px;
+  width: auto;
+}
+
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
   .help-section {
