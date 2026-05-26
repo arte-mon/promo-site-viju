@@ -1,0 +1,107 @@
+body {
+  background-color: #212121;
+}
+
+.hero-help-section {
+}
+
+.hero-help-inner {
+  width: 100%;
+
+  padding: 10svh 0;
+  height: 100svh;
+
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 30px;
+}
+
+/* Стили для карточек */
+.card {
+  background-color: #0d0f0b; /* Черный фон карточек */
+  border-radius: 30px;
+  padding: 50px;
+  color: #ffe342; /* Желтый цвет текста */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 695px;
+}
+
+.card--main {
+  /* width: 30%; */
+  color: #9e8e2c;
+}
+
+.card--features {
+}
+
+/* Левая карточка */
+.card--main h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Адаптивный размер шрифта */
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+
+.back-link {
+  font-size: 1rem;
+  text-decoration: none;
+
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.back-link:hover {
+  opacity: 1;
+}
+
+/* Правая карточка */
+.card--features h3 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.features-list li {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.features-list li a {
+  text-decoration: underline;
+}
+
+.download-btn {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #ffd700;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.download-btn:hover {
+  transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .help-section {
+    flex-direction: column; /* Блоки становятся друг под другом */
+    gap: 20px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+}

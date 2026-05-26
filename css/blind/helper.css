@@ -1,0 +1,128 @@
+.helper-section {
+  height: 80svh;
+}
+
+/* Контейнер секции */
+.helper-section-inner {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 30px;
+
+  width: 100%;
+  flex-wrap: wrap; /* Для адаптивности */
+  height: 70svh;
+}
+
+/* Общие стили для карточек */
+.card {
+  border-radius: 40px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 300px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- ЛЕВАЯ КАРТОЧКА --- */
+.card-left {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Желтая плашка с заголовком */
+.card-left__header {
+  background-color: #ffe600;
+  border-radius: 50px;
+  color: #000000;
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-left__title {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0;
+}
+
+/* Черная часть с текстом */
+.card-left__content {
+  background-color: #111111;
+  color: #ffe342;
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+  /* Изогнутая граница сверху */
+  border-top-left-radius: 50px;
+  border-top-right-radius: 20px;
+  margin-top: -20px; /* Небольшое наложение для плавности */
+}
+
+.card-left__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  color: #ffe342;
+}
+
+/* --- ПРАВАЯ КАРТОЧКА --- */
+.card-right {
+  /* background-color: #111111; */
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-right-1 {
+  background-image: url(../../assets/img/help-card-1.png);
+}
+
+.card-right-2 {
+  background-image: url(../../assets/img/help-card-2.png);
+}
+
+.card-right-3 {
+  background-image: url(../../assets/img/help-card-3.png);
+}
+
+.card-right__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 450px;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+  }
+
+  .card-left__title {
+    font-size: 2rem;
+  }
+
+  .card-left__text {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    min-height: auto;
+  }
+
+  .card-left__header,
+  .card-left__content {
+    padding: 30px;
+  }
+}
