@@ -6,14 +6,35 @@
   overflow: hidden;
 }
 
-.select-inner {
+.select-container {
   width: 100%;
   height: 100%;
   padding: 10svh 0;
-  
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+
+/* Левая половина - тёмный фон из blind.html */
+.select-left {
+  background-color: #212121;
+  border-radius: 30px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Правая половина - светлый фон из index.html */
+.select-right {
+  background-color: #fcfff5;
+  border-radius: 60px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 /* Общие стили для карточек */
@@ -23,16 +44,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
   max-height: 695px;
 }
 
 /* Левая карточка - стили из blind.html (hero-help-section) */
-.card--left {
+.card--main {
   background-color: #0d0f0b;
   color: #9e8e2c;
 }
 
-.card--left h2 {
+.card--main h2 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 1.2;
   margin: 0 0 20px 0;
@@ -44,6 +66,7 @@
   text-decoration: none;
   opacity: 0.8;
   transition: opacity 0.3s ease;
+  color: #9e8e2c;
 }
 
 .back-link:hover {
@@ -51,14 +74,14 @@
 }
 
 /* Правая карточка - стили из index.html (hero section) */
-.card--right {
+.card-right {
   background-color: #fcfff5;
-  color: #81c784;
   align-items: flex-start;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .side-title {
@@ -72,11 +95,17 @@
 
 /* Адаптивность */
 @media (max-width: 768px) {
-  .select-inner {
+  .select-container {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 5svh 0;
   }
-  
+
+  .select-left,
+  .select-right {
+    padding: 30px;
+  }
+
   .card {
     padding: 30px;
     max-height: none;
